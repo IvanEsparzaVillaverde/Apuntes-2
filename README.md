@@ -54,4 +54,11 @@ Para crear tablas utilizaremos una estructura similar:
 
 En las tablas de una BD debemos indicar claves primarias y claves ajenas. Para indicar claves primarias utilizaremos **PRIMARY KEY** justo despues del tipo de dominio.
 
-Para las claves ajenas, las indicamos con **FOREGIN KEY (atributos) REFERENCES (<tabla que se referencia>) ** 
+Para las claves ajenas, las indicamos con **FOREGIN KEY (atributos) REFERENCES (tabla que se referencia)**. A continuación utilizamos **ON DELETE** y **ON UPDATE**. 
+>No es recomendable utilizar en **ON DELETE** **CASCADE** ya que se borraría todo lo que esta antes de lo que quremos eliminar es mejor utilizar **SET NULL**.
+
+>En **ON UPDATE** al contrario de **ON DELETE** deberiamos utilizar **CASCADE** ya que así podriamos actualizar todos los datos de la tabla.
+
+Para hacer predicados se utiliza **CHECK**.
+> **CHECK** tiene 2 valores que son **NOT DEFERRABLE INITIALLY INMEDIATE**, indiaca que el predicado no es aplazable y se debe ejecutar de inmediato,y **DEFERRABLE INITIALLY DEFERRABLE**, que indica que el predicado es aplazabley no es necesario ejecutarlo en ese momento.
+
