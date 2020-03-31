@@ -71,4 +71,5 @@ Para hacer predicados se utiliza **CHECK**.
 >Para borrar una tabla utilizamos **DROP TABLE**. AL igual que **DROP SCHEMA** o **DROP DATABASE** puede tener el valor **IF EXISTS**, **CASCADE** y **RESTRICT**. 
 
 >**CASCADE** eliminará toda la tabla.
+
 >**RESTRICT** si la tabla tiene dependencia de otra esa tabla no se eliminará.
