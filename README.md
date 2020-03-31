@@ -62,3 +62,4 @@ Para las claves ajenas, las indicamos con **FOREGIN KEY (atributos) REFERENCES (
 Para hacer predicados se utiliza **CHECK**.
 > **CHECK** tiene 2 valores que son **NOT DEFERRABLE INITIALLY INMEDIATE**, indiaca que el predicado no es aplazable y se debe ejecutar de inmediato,y **DEFERRABLE INITIALLY DEFERRABLE**, que indica que el predicado es aplazabley no es necesario ejecutarlo en ese momento.
 
+**UNIQUE** lo utilizamos en claves secundarias. 
