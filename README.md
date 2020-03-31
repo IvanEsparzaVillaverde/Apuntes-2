@@ -33,7 +33,9 @@ Cuando hablamos de dominios nos estamos refiriendo a los tipos de datos que pode
 
 
 # DDL
-##CREATE
+
+## CREATE
+
 En DDL, para crear BD o tablas utilizamos **CREATE**.
 
 Para crear una BD utilizaremos la siguiente estructura:
