@@ -67,3 +67,8 @@ Para hacer predicados se utiliza **CHECK**.
 ## DROP
 **DROP** lo utilizamos para borrar BD y tablas.
 > Para borrar una Base de Datos, utilizaremos **DROP SCHEMA** o **DROP DATABASE**. Puede llevar **IF EXISTS**. Lo que hace **IF EXISTS** es borrar la tabla si existe.Si ponemos un nombre erroneo o de una tabla que no exixte no borrará ninguna tabla.
+
+>Para borrar una tabla utilizamos **DROP TABLE**. AL igual que **DROP SCHEMA** o **DROP DATABASE** puede tener el valor **IF EXISTS**, **CASCADE** y **RESTRICT**. 
+
+>**CASCADE** eliminará toda la tabla.
+>**RESTRICT** si la tabla tiene dependencia de otra esa tabla no se eliminará.
