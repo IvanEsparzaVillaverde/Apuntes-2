@@ -73,3 +73,9 @@ Para hacer predicados se utiliza **CHECK**.
 >**CASCADE** eliminará toda la tabla.
 
 >**RESTRICT** si la tabla tiene dependencia de otra esa tabla no se eliminará.
+
+## ALTER
+**ALTER** sirve para modificar una columna o tabla.
+>Tiene dos valores **ADD** (añadir) y **DROP** (borrar).
+
+Si queremos modificar una columna debemos poner **ALTER TABLE (tanla) DROP|ADD COLUMN...**
