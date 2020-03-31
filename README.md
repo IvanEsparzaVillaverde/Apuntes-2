@@ -63,3 +63,7 @@ Para hacer predicados se utiliza **CHECK**.
 > **CHECK** tiene 2 valores que son **NOT DEFERRABLE INITIALLY INMEDIATE**, indiaca que el predicado no es aplazable y se debe ejecutar de inmediato,y **DEFERRABLE INITIALLY DEFERRABLE**, que indica que el predicado es aplazabley no es necesario ejecutarlo en ese momento.
 
 **UNIQUE** lo utilizamos en claves secundarias. 
+
+## DROP
+**DROP** lo utilizamos para borrar BD y tablas.
+> Para borrar una Base de Datos, utilizaremos **DROP SCHEMA** o **DROP DATABASE**. Puede llevar **IF EXISTS**. Lo que hace **IF EXISTS** es borrar la tabla si existe.Si ponemos un nombre erroneo o de una tabla que no exixte no borrará ninguna tabla.
