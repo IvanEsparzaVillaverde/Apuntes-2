@@ -19,15 +19,16 @@ En el lenguajes SQL existen 6 sublenguajes que son:
 ## Dominios
 
 Cuando hablamos de dominios nos estamos refiriendo a los tipos de datos que podemos introducir en la BD. Los que usaremos para la creación de BD son :
-	- INTEGER (números enteros)
-	- DECIMAL (números decimales)
-	- TEXT (texto)
-	- VARCHAR (cadena de caracteres)
-	- CHAR (un numero determinado de caracteres)
-	- BOOLEAN 
-	- TIME (hora del día)
-	- DATE (fecha)
-	- TIMESTAMP (Es una mezcla entre TIME y DATE, indica la fecha del día y la hora)
+	
+- INTEGER (números enteros)
+- DECIMAL (números decimales)
+- TEXT (texto)
+- VARCHAR (cadena de caracteres)
+- CHAR (un numero determinado de caracteres)
+- BOOLEAN 
+- TIME (hora del día)
+- DATE (fecha)
+- TIMESTAMP (Es una mezcla entre TIME y DATE, indica la fecha del día y la hora)
 
 
 
