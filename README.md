@@ -50,3 +50,8 @@ Para crear tablas utilizaremos una estructura similar:
     CREATE TABLE "nombre de la tabla" (
     Columnas  Dominios
     );
+## CONSTRAINT
+
+En las tablas de una BD debemos indicar claves primarias y claves ajenas. Para indicar claves primarias utilizaremos **PRIMARY KEY** justo despues del tipo de dominio.
+
+Para las claves ajenas, las indicamos con **FOREGIN KEY (atributos) REFERENCES (<tabla que se referencia>) ** 
