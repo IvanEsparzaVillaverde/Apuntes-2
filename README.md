@@ -41,9 +41,12 @@ En DDL, para crear BD o tablas utilizamos **CREATE**.
 
 Para crear una BD utilizaremos la siguiente estructura:
 
-    CREATE (SCHEMA | DATABASE)
+```sql
+CREATE (SCHEMA | DATABASE)
     [IF NOT EXISTS]		<nombre de BD>
     [CHARACTER SET]		<nombre de charset>;
+
+```
     
 Para crear tablas utilizaremos una estructura similar: 
 
