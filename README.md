@@ -33,8 +33,12 @@ Cuando hablamos de dominios nos estamos refiriendo a los tipos de datos que pode
 - DATE (fecha)
 - TIMESTAMP (Es una mezcla entre TIME y DATE, indica la fecha del día y la hora)
 
-
-
+DEFINICIÓN DE DOMINIOS:
+```sql
+CREATE DOMAIN Nome_Válido VARCHAR(30);
+CREATE DOMAIN Tipo_Código CHAR(5);
+CREATE DOMAIN Tipo_DNI    CHAR(9);
+```
 
 # DDL
 
@@ -57,6 +61,14 @@ Para crear tablas utilizaremos una estructura similar:
     CREATE TABLE nombreTabla (
     Columnas  Dominios
     );
+```
+EJEMPLO:
+```sql
+CREATE TABLE Departamento (
+  Nome_Departamento Nome_Válido  PRIMARY KEY,
+  Teléfono          CHAR(9)      NOT NULL,
+  Director          Tipo_DNI
+);
 ```
 ## CONSTRAINT
 
@@ -154,6 +166,7 @@ Se utiliza para actualizar las tuplas de una columna.
 	...
     [WHERE <predicado>];
 ```
+EJEMPLO:
 ``` sql
  UPDATE world
    SET name = 'España',
@@ -170,6 +183,7 @@ Al igual que en **UPDATE** podemos utilizar **WHERE** para especificar las tupla
 DELETE FROM <nome tabla>
  [WHERE <predicado>];
 ```
+EJEMPLO:
 ```sql
 DELETE FROM world
  WHERE population>100 000 000;
