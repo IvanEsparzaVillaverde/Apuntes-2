@@ -1,3 +1,6 @@
+# Indice
+- [DELETE](#DELETE).
+
 # Sublenguajes SQL
 
 En el lenguajes SQL existen 6 sublenguajes que son:
@@ -237,7 +240,7 @@ EJEMPLO:
 	...
     WHERE name='Spain';
 ```
-## DELETE 
+### DELETE 
 
 Sirve para borrar tuplasde una tabla.
 
