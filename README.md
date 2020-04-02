@@ -197,6 +197,7 @@ CREATE TABLE Proxecto (
 >**CASCADE** eliminará toda la tabla.
 
 >**RESTRICT** si la tabla tiene dependencia de otra esa tabla no se eliminará.
+
 [Indice](#Indice)
 ## ALTER
 **ALTER** sirve para modificar una columna o tabla.
@@ -216,6 +217,7 @@ ALTER TABLE Financia
     ON UPDATE Cascade;
 ```
 Si queremos modificar una columna debemos poner **ALTER TABLE (tabla) DROP|ADD COLUMN...**
+
 [Indice](#Indice)
 # DML
 
