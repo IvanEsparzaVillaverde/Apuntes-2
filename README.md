@@ -159,7 +159,7 @@ CREATE TABLE Proxecto (
     );
 ```
 EJEMPLO:
-```
+```sql
 CREATE TABLE Proxecto (
   Código_Proxecto Tipo_Código  PRIMARY KEY,
   Nome_Proxecto   Nome_Válido  NOT NULL,
