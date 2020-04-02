@@ -79,3 +79,25 @@ Para hacer predicados se utiliza **CHECK**.
 >Tiene dos valores **ADD** (añadir) y **DROP** (borrar).
 
 Si queremos modificar una columna debemos poner **ALTER TABLE (tanla) DROP|ADD COLUMN...**
+
+# DML
+
+## INSERT
+
+Sirve para insertar nuevas tuplas en una tabla.
+
+INSERT INTO <nome-da-tabla> [(<atributo1>,<atributo2>...)]
+VALUES (<valor1>,<valor2>,...) | SELECT... ;
+
+>En **SELECT** tiene que indicar el mismo número de columnas o elmismo número de dominios (DATETIME, NCHAR, INTEGER).
+
+## VALUES
+
+(<valor1A>,<valor2A>,...),
+(<valor1A>,<valor2A>,...),
+...),
+(<valor1N>,<valor2N>,...), | SELECT
+
+## UPDATE
+Se utiliza para actualizar las tuplas de una columna. 
+ 
