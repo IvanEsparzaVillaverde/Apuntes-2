@@ -144,19 +144,30 @@ VALUES (<valor1>,<valor2>,...) | SELECT... ;
 ```
 ## UPDATE
 Se utiliza para actualizar las tuplas de una columna. 
-``` 
+``` sql
  UPDATE <nombre tabla>
    SET <atributo1> = <valor1>,
 	<atributo2> = <valor2>,
 	...
     [WHERE <predicado>];
-```		
+```
+``` sql
+ UPDATE world
+   SET name = 'España',
+	continent= 'Africa',
+	...
+    WHERE name='Spain';
+```
 ## DELETE 
 
 Sirve para borrar tuplasde una tabla.
 
 Al igual que en **UPDATE** podemos utilizar **WHERE** para especificar las tuplas que queremos borrar.
-```
+```sql
 DELETE FROM <nome tabla>
  [WHERE <predicado>];
+```
+```sql
+DELETE FROM world
+ WHERE population>100 000 000;
 ```
