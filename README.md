@@ -66,14 +66,14 @@ En las tablas de una BD debemos indicar claves primarias y claves ajenas. Para i
 >Si existen mas de una clave primaria ponemos **PRIMARY KEY** y entre parentesis los nombres de las claves.
 ```sql
     CREATE TABLE nombreTabla (
-    <atributo1>  <Dominio1>
-    <atributo2>  <Dominio2>
+    <atributo1>  <Dominio1>,
+    <atributo2>  <Dominio2>,
     PRIMARY KEY (atributo1,atributo2)
     );
 ```
 Para las claves ajenas, las indicamos con **FOREGIN KEY (atributos) REFERENCES (tabla que se referencia)**. A continuación utilizamos **ON DELETE** y **ON UPDATE**. 
 ```sql
-FOREIGN KEY (<atributos>) REFERENCES nombreTabla [(<atributosReferencia>)]
+FOREIGN KEY (<atributos>) REFERENCES nombreTabla (<atributosReferencia>)
 [ON DELETE NO ACTION | CASCADE | SET DEFAULT | SET NULL]
 [ON UPDATE NO ACTION | CASCADE | SET DEFAULT | SET NULL]
 ```
@@ -82,10 +82,21 @@ FOREIGN KEY (<atributos>) REFERENCES nombreTabla [(<atributosReferencia>)]
 >En **ON UPDATE** al contrario de **ON DELETE** deberiamos utilizar **CASCADE** ya que así podriamos actualizar todos los datos de la tabla.
 
 Para hacer predicados se utiliza **CHECK**.
+```sql
+CHECK predicado (atributos)
+[(NOT) DEFERRABLE ]
+[INITIALLY INMEDIATE | DEFERABLE]
+```
 > **CHECK** tiene 2 valores que son **NOT DEFERRABLE INITIALLY INMEDIATE**, indiaca que el predicado no es aplazable y se debe ejecutar de inmediato,y **DEFERRABLE INITIALLY DEFERRABLE**, que indica que el predicado es aplazabley no es necesario ejecutarlo en ese momento.
 
 **UNIQUE** lo utilizamos en claves secundarias. 
-
+```sql
+    CREATE TABLE nombreTabla (
+    <atributo1>  <Dominio1> PRIMARY KEY,
+    <atributo2>  <Dominio2> UNIQUE,
+    <atributo2>  <Dominio2>,
+    );
+```
 ## DROP
 **DROP** lo utilizamos para borrar BD y tablas.
 > Para borrar una Base de Datos, utilizaremos **DROP SCHEMA** o **DROP DATABASE**. Puede llevar **IF EXISTS**. Lo que hace **IF EXISTS** es borrar la tabla si existe.Si ponemos un nombre erroneo o de una tabla que no exixte no borrará ninguna tabla.
