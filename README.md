@@ -100,4 +100,8 @@ VALUES (<valor1>,<valor2>,...) | SELECT... ;
 
 ## UPDATE
 Se utiliza para actualizar las tuplas de una columna. 
- 
+ UPDATE <nombre tabla>
+   SET <atributo1> = <valor1>,
+	<atributo2> = <valor2>,
+	...
+    [WHERE <predicado>];
