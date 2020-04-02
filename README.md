@@ -100,9 +100,16 @@ CHECK predicado (atributos)
 ## DROP
 **DROP** lo utilizamos para borrar BD y tablas.
 > Para borrar una Base de Datos, utilizaremos **DROP SCHEMA** o **DROP DATABASE**. Puede llevar **IF EXISTS**. Lo que hace **IF EXISTS** es borrar la tabla si existe.Si ponemos un nombre erroneo o de una tabla que no exixte no borrará ninguna tabla.
-
+```sql
+    DROP ( SCHEMA | DATABASE)
+    [IF EXISTS]      <nombre da BD>;
+```
 >Para borrar una tabla utilizamos **DROP TABLE**. AL igual que **DROP SCHEMA** o **DROP DATABASE** puede tener el valor **IF EXISTS**, **CASCADE** y **RESTRICT**. 
-
+```sql
+    DROP TABLE 
+    [IF EXISTS]   <nombreTabla>
+    [CASCADE | RESTRICT];
+```
 >**CASCADE** eliminará toda la tabla.
 
 >**RESTRICT** si la tabla tiene dependencia de otra esa tabla no se eliminará.
@@ -110,41 +117,46 @@ CHECK predicado (atributos)
 ## ALTER
 **ALTER** sirve para modificar una columna o tabla.
 >Tiene dos valores **ADD** (añadir) y **DROP** (borrar).
-
-Si queremos modificar una columna debemos poner **ALTER TABLE (tanla) DROP|ADD COLUMN...**
+```sql
+ALTER TABLE nombreTabla 
+DROP COLUMN <atributo> [CASCADE | RESTRICT],
+ADD COLUMN <atributo> <Dominio> NOT NULL ...                        
+```
+Si queremos modificar una columna debemos poner **ALTER TABLE (tabla) DROP|ADD COLUMN...**
 
 # DML
 
 ## INSERT
 
 Sirve para insertar nuevas tuplas en una tabla.
-
+```sql
 INSERT INTO <nome-da-tabla> [(<atributo1>,<atributo2>...)]
 VALUES (<valor1>,<valor2>,...) | SELECT... ;
-
+```
 >En **SELECT** tiene que indicar el mismo número de columnas o elmismo número de dominios (DATETIME, NCHAR, INTEGER).
 
 ## VALUES
-
+```sql
 (<valor1A>,<valor2A>,...),
 (<valor1A>,<valor2A>,...),
 ...),
 (<valor1N>,<valor2N>,...), | SELECT
-
+```
 ## UPDATE
 Se utiliza para actualizar las tuplas de una columna. 
- 
+``` 
  UPDATE <nombre tabla>
    SET <atributo1> = <valor1>,
 	<atributo2> = <valor2>,
 	...
     [WHERE <predicado>];
-		
+```		
 ## DELETE 
 
 Sirve para borrar tuplasde una tabla.
 
 Al igual que en **UPDATE** podemos utilizar **WHERE** para especificar las tuplas que queremos borrar.
-
+```
 DELETE FROM <nome tabla>
  [WHERE <predicado>];
+```
