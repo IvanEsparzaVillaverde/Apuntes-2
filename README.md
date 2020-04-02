@@ -54,6 +54,10 @@ CREATE (SCHEMA | DATABASE)
     [CHARACTER SET]		<nombre de charset>;
 
 ```
+EJEMPLO:
+```sql
+CREATE DATABASE ProyectoDeInvestigacion;
+```
     
 Para crear tablas utilizaremos una estructura similar: 
 
@@ -65,7 +69,7 @@ Para crear tablas utilizaremos una estructura similar:
 EJEMPLO:
 ```sql
 CREATE TABLE Departamento (
-  Nome_Departamento Nome_Válido  PRIMARY KEY,
+  Nome_Departamento Nome_Válido,
   Teléfono          CHAR(9)      NOT NULL,
   Director          Tipo_DNI
 );
@@ -78,6 +82,14 @@ En las tablas de una BD debemos indicar claves primarias y claves ajenas. Para i
     <atributo>  <Dominio> PRIMARY KEY
     );
 ```
+EJEMPLO:
+```sql
+CREATE TABLE Departamento (
+  Nome_Departamento Nome_Válido PRIMARY KEY,
+  Teléfono          CHAR(9)      NOT NULL,
+  Director          Tipo_DNI
+);
+```
 >Si existen mas de una clave primaria ponemos **PRIMARY KEY** y entre parentesis los nombres de las claves.
 ```sql
     CREATE TABLE nombreTabla (
@@ -86,11 +98,33 @@ En las tablas de una BD debemos indicar claves primarias y claves ajenas. Para i
     PRIMARY KEY (atributo1,atributo2)
     );
 ```
+EJEMPLO:
+```sql
+CREATE TABLE Departamento (
+  Nome_Departamento Nome_Válido,
+  Teléfono          CHAR(9)      NOT NULL,
+  Director          Tipo_DNI
+  PRIMARY KEY (Nome_Departamento,Director)
+);
+```
 Para las claves ajenas, las indicamos con **FOREGIN KEY (atributos) REFERENCES (tabla que se referencia)**. A continuación utilizamos **ON DELETE** y **ON UPDATE**. 
 ```sql
 FOREIGN KEY (<atributos>) REFERENCES nombreTabla (<atributosReferencia>)
 [ON DELETE NO ACTION | CASCADE | SET DEFAULT | SET NULL]
 [ON UPDATE NO ACTION | CASCADE | SET DEFAULT | SET NULL]
+```
+EJEMPLO:
+```sql
+CREATE TABLE Grupo (
+  Nome_Grupo        Nome_Válido,
+  Nome_Departamento Nome_Válido,
+  Área              Nome_Válido NOT NULL,
+  Lider             Tipo_DNI,
+  PRIMARY KEY (Nome_Grupo, Nome_Departamento)
+  FOREIGN KEY (Nome_Departamento) REFERENCES Departamento
+    ON DELETE CASCADE 
+    ON UPDATE CASCADE
+);
 ```
 >No es recomendable utilizar en **ON DELETE** **CASCADE** ya que se borraría todo lo que esta antes de lo que quremos eliminar es mejor utilizar **SET NULL**.
 
@@ -101,6 +135,18 @@ Para hacer predicados se utiliza **CHECK**.
 CHECK predicado (atributos)
 [(NOT) DEFERRABLE ]
 [INITIALLY INMEDIATE | DEFERABLE]
+```
+EJEMPLO:
+```sql
+CREATE TABLE Proxecto (
+  Código_Proxecto Tipo_Código  PRIMARY KEY,
+  Nome_Proxecto   Nome_Válido  NOT NULL,
+  Orzamento       MONEY        NOT NULL,
+  Data_Inicio     DATE         NOT NULL,
+  Data_Fin        DATE,
+  CONSTRAINT Check_Dates
+    CHECK (Data_Inicio < Data_Fin)
+);
 ```
 > **CHECK** tiene 2 valores que son **NOT DEFERRABLE INITIALLY INMEDIATE**, indiaca que el predicado no es aplazable y se debe ejecutar de inmediato,y **DEFERRABLE INITIALLY DEFERRABLE**, que indica que el predicado es aplazabley no es necesario ejecutarlo en ese momento.
 
