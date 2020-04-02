@@ -3,6 +3,14 @@
 2-[Dominios](#Dominios)
 3-[DDL](#DDL)
   3.1-[CREATE](#CREATE)
+  3.2-[CONSTRAINT](#CONSTRAINT)
+  3.3-[DROP](#DROP)
+  3.4-[ALTER](#ALTER)
+4-[DML](#DML)
+  4.1-[INSERT](#INSERT)
+  4.2-[VALUES](#VALUES)
+  4.3-[UPDATE](#UPDATE)
+  4.4-[DELETE](#DELETE)
 # Sublenguajes SQL
 
 En el lenguajes SQL existen 6 sublenguajes que son:
