@@ -100,8 +100,18 @@ VALUES (<valor1>,<valor2>,...) | SELECT... ;
 
 ## UPDATE
 Se utiliza para actualizar las tuplas de una columna. 
+ 
  UPDATE <nombre tabla>
    SET <atributo1> = <valor1>,
 	<atributo2> = <valor2>,
 	...
     [WHERE <predicado>];
+		
+## DELETE 
+
+Sirve para borrar tuplasde una tabla.
+
+Al igual que en **UPDATE** podemos utilizar **WHERE** para especificar las tuplas que queremos borrar.
+
+DELETE FROM <nome tabla>
+ [WHERE <predicado>];
