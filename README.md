@@ -1,6 +1,8 @@
 # Indice
-- [DELETE](#DELETE).
-
+1-[Sublenguajes SQL](#Sublenguajes-SQL)
+2-[Dominios](#Dominios)
+3-[DDL](#DDL)
+  3.1-[CREATE](#CREATE)
 # Sublenguajes SQL
 
 En el lenguajes SQL existen 6 sublenguajes que son:
@@ -240,7 +242,7 @@ EJEMPLO:
 	...
     WHERE name='Spain';
 ```
-### DELETE 
+## DELETE 
 
 Sirve para borrar tuplasde una tabla.
 
