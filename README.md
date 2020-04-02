@@ -31,7 +31,7 @@ En el lenguajes SQL existen 6 sublenguajes que son:
  - DCL(Data Control Languaje):GRANT, REVOKE, AUDIT, COMMENT, ANALYZE
  
  - SCL(Session Control Languaje): ALERT SESSION, SET ROLL
-
+[Indice](#Indice)
 ## Dominios
 
 Cuando hablamos de dominios nos estamos refiriendo a los tipos de datos que podemos introducir en la BD. Los que usaremos para la creación de BD son :
@@ -52,7 +52,7 @@ CREATE DOMAIN Nome_Válido VARCHAR(30);
 CREATE DOMAIN Tipo_Código CHAR(5);
 CREATE DOMAIN Tipo_DNI    CHAR(9);
 ```
-
+[Indice](#Indice)
 # DDL
 
 ## CREATE
@@ -87,6 +87,7 @@ CREATE TABLE Departamento (
   Director          Tipo_DNI
 );
 ```
+[Indice](#Indice)
 ## CONSTRAINT
 
 En las tablas de una BD debemos indicar claves primarias y claves ajenas. Para indicar claves primarias utilizaremos **PRIMARY KEY** justo despues del tipo de dominio.
@@ -179,6 +180,7 @@ CREATE TABLE Proxecto (
   UNIQUE (Nome_Proxecto)
 );
 ```
+[Indice](#Indice)
 ## DROP
 **DROP** lo utilizamos para borrar BD y tablas.
 > Para borrar una Base de Datos, utilizaremos **DROP SCHEMA** o **DROP DATABASE**. Puede llevar **IF EXISTS**. Lo que hace **IF EXISTS** es borrar la tabla si existe.Si ponemos un nombre erroneo o de una tabla que no exixte no borrará ninguna tabla.
@@ -195,7 +197,7 @@ CREATE TABLE Proxecto (
 >**CASCADE** eliminará toda la tabla.
 
 >**RESTRICT** si la tabla tiene dependencia de otra esa tabla no se eliminará.
-
+[Indice](#Indice)
 ## ALTER
 **ALTER** sirve para modificar una columna o tabla.
 >Tiene dos valores **ADD** (añadir) y **DROP** (borrar).
@@ -214,7 +216,7 @@ ALTER TABLE Financia
     ON UPDATE Cascade;
 ```
 Si queremos modificar una columna debemos poner **ALTER TABLE (tabla) DROP|ADD COLUMN...**
-
+[Indice](#Indice)
 # DML
 
 ## INSERT
@@ -225,7 +227,7 @@ INSERT INTO <nome-da-tabla> [(<atributo1>,<atributo2>...)]
 VALUES (<valor1>,<valor2>,...) | SELECT... ;
 ```
 >En **SELECT** tiene que indicar el mismo número de columnas o elmismo número de dominios (DATETIME, NCHAR, INTEGER).
-
+[Indice](#Indice)
 ## VALUES
 ```sql
 (<valor1A>,<valor2A>,...),
@@ -233,6 +235,7 @@ VALUES (<valor1>,<valor2>,...) | SELECT... ;
 ...),
 (<valor1N>,<valor2N>,...), | SELECT
 ```
+[Indice](#Indice)
 ## UPDATE
 Se utiliza para actualizar las tuplas de una columna. 
 ``` sql
@@ -250,6 +253,7 @@ EJEMPLO:
 	...
     WHERE name='Spain';
 ```
+[Indice](#Indice)
 ## DELETE 
 
 Sirve para borrar tuplasde una tabla.
@@ -264,3 +268,4 @@ EJEMPLO:
 DELETE FROM world
  WHERE population>100 000 000;
 ```
+[Indice](#Indice)
