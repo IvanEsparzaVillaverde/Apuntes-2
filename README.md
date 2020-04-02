@@ -158,6 +158,14 @@ CREATE TABLE Proxecto (
     <atributo2>  <Dominio2>,
     );
 ```
+EJEMPLO:
+```
+CREATE TABLE Proxecto (
+  Código_Proxecto Tipo_Código  PRIMARY KEY,
+  Nome_Proxecto   Nome_Válido  NOT NULL,
+  UNIQUE (Nome_Proxecto)
+);
+```
 ## DROP
 **DROP** lo utilizamos para borrar BD y tablas.
 > Para borrar una Base de Datos, utilizaremos **DROP SCHEMA** o **DROP DATABASE**. Puede llevar **IF EXISTS**. Lo que hace **IF EXISTS** es borrar la tabla si existe.Si ponemos un nombre erroneo o de una tabla que no exixte no borrará ninguna tabla.
@@ -182,6 +190,15 @@ CREATE TABLE Proxecto (
 ALTER TABLE nombreTabla 
 DROP COLUMN <atributo> [CASCADE | RESTRICT],
 ADD COLUMN <atributo> <Dominio> NOT NULL ...                        
+```
+EJEMPLO:
+```sql
+ALTER TABLE Financia
+  ADD CONSTRAINT FK_Proxecto_Financia
+    FOREIGN KEY (Código_Proxecto)
+    REFERENCES Proxecto
+    ON DELETE Cascade
+    ON UPDATE Cascade;
 ```
 Si queremos modificar una columna debemos poner **ALTER TABLE (tabla) DROP|ADD COLUMN...**
 
