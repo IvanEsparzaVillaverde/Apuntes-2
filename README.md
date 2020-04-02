@@ -1,16 +1,29 @@
 # Indice
+
 1-[Sublenguajes SQL](#Sublenguajes-SQL)
+
 2-[Dominios](#Dominios)
+
 3-[DDL](#DDL)
-  3.1-[CREATE](#CREATE)
-  3.2-[CONSTRAINT](#CONSTRAINT)
-  3.3-[DROP](#DROP)
-  3.4-[ALTER](#ALTER)
+
+ 3.1-[CREATE](#CREATE)
+
+ 3.2-[CONSTRAINT](#CONSTRAINT)
+
+ 3.3-[DROP](#DROP)
+
+ 3.4-[ALTER](#ALTER)
+
 4-[DML](#DML)
-  4.1-[INSERT](#INSERT)
-  4.2-[VALUES](#VALUES)
-  4.3-[UPDATE](#UPDATE)
-  4.4-[DELETE](#DELETE)
+
+ 4.1-[INSERT](#INSERT)
+
+ 4.2-[VALUES](#VALUES)
+
+ 4.3-[UPDATE](#UPDATE)
+
+ 4.4-[DELETE](#DELETE)
+
 # Sublenguajes SQL
 
 En el lenguajes SQL existen 6 sublenguajes que son:
@@ -31,6 +44,7 @@ En el lenguajes SQL existen 6 sublenguajes que son:
  - DCL(Data Control Languaje):GRANT, REVOKE, AUDIT, COMMENT, ANALYZE
  
  - SCL(Session Control Languaje): ALERT SESSION, SET ROLL
+
 [Indice](#Indice)
 ## Dominios
 
@@ -229,6 +243,7 @@ INSERT INTO <nome-da-tabla> [(<atributo1>,<atributo2>...)]
 VALUES (<valor1>,<valor2>,...) | SELECT... ;
 ```
 >En **SELECT** tiene que indicar el mismo número de columnas o elmismo número de dominios (DATETIME, NCHAR, INTEGER).
+
 [Indice](#Indice)
 ## VALUES
 ```sql
