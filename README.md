@@ -58,8 +58,25 @@ Para crear tablas utilizaremos una estructura similar:
 ## CONSTRAINT
 
 En las tablas de una BD debemos indicar claves primarias y claves ajenas. Para indicar claves primarias utilizaremos **PRIMARY KEY** justo despues del tipo de dominio.
-
+```sql
+    CREATE TABLE nombreTabla (
+    <atributo>  <Dominio> PRIMARY KEY
+    );
+```
+>Si existen mas de una clave primaria ponemos **PRIMARY KEY** y entre parentesis los nombres de las claves.
+```sql
+    CREATE TABLE nombreTabla (
+    <atributo1>  <Dominio1>
+    <atributo2>  <Dominio2>
+    PRIMARY KEY (atributo1,atributo2)
+    );
+```
 Para las claves ajenas, las indicamos con **FOREGIN KEY (atributos) REFERENCES (tabla que se referencia)**. A continuación utilizamos **ON DELETE** y **ON UPDATE**. 
+```sql
+FOREIGN KEY (<atributos>) REFERENCES nombreTabla [(<atributosReferencia>)]
+[ON DELETE NO ACTION | CASCADE | SET DEFAULT | SET NULL]
+[ON UPDATE NO ACTION | CASCADE | SET DEFAULT | SET NULL]
+```
 >No es recomendable utilizar en **ON DELETE** **CASCADE** ya que se borraría todo lo que esta antes de lo que quremos eliminar es mejor utilizar **SET NULL**.
 
 >En **ON UPDATE** al contrario de **ON DELETE** deberiamos utilizar **CASCADE** ya que así podriamos actualizar todos los datos de la tabla.
