@@ -1,20 +1,23 @@
 # Sublenguajes SQL
 
 En el lenguajes SQL existen 6 sublenguajes que son:
-1- DQL (Data Query Languaje): SELECT
-2-DML (Data Manipulation Languaje): INSERT, UPDATE, DELETE
+
+ - DQL (Data Query Languaje): SELECT
+ 
+ - DML (Data Manipulation Languaje): INSERT, UPDATE, DELETE
+
 >Estos dos sublenguajes operan sobre los datos.
 
-3-DDL (Data Definition Languaje): CREATE, ALTER, DROP
+ - DDL (Data Definition Languaje): CREATE, ALTER, DROP
+ 
 > Esta sublenguaje opera sobre los objetos de la BD.
 > DQL, DML y DDL son el **núcleo central de SQL**.
 
-4- TCL (Transaction Control Languaje): COMMIT, ROLLBACK, SAVEPOINT
-5-DCL(Data Control Languaje):GRANT, REVOKE, AUDIT, COMMENT, ANALYZE
-6-SCL(Session Control Languaje): ALERT SESSION, SET ROLL
-
-
-
+ - TCL (Transaction Control Languaje): COMMIT, ROLLBACK, SAVEPOINT
+ 
+ - DCL(Data Control Languaje):GRANT, REVOKE, AUDIT, COMMENT, ANALYZE
+ 
+ - SCL(Session Control Languaje): ALERT SESSION, SET ROLL
 
 ## Dominios
 
