@@ -286,3 +286,7 @@ DELETE FROM world
  WHERE population>100 000 000;
 ```
 [Indice](#Indice)
+
+# Instalación MariaDB
+
+Para ver a instalación visita este [gist.] (https://gist.github.com/IvanEsparzaVillaverde/498d74498de71a4e7222e8060c00b16d#file-instalacion-mariadb-md)
