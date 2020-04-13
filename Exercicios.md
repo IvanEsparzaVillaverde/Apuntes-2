@@ -5,4 +5,4 @@ Para a creación de estas bases de datos, utilicei o coódigo discutido na clase
  [Capturas](https://github.com/IvanEsparzaVillaverde/Apuntes-2/tree/master/Bases%20proxecto)
 ## Base de datos "Naves espaciais"
  [Capturas](https://github.com/IvanEsparzaVillaverde/Apuntes-2/tree/master/Bases%20nave)
-![imagen](https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png)
+![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/databases.PNG)
