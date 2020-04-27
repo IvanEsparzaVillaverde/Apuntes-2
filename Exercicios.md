@@ -58,15 +58,15 @@ Carpeta coas capturas desta base de datos:
  
  
 ## Base de datos "Naves espaciais"
- [Capturas](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/Bases%20nave/nave.PNG)
+ [Capturas](https://github.com/IvanEsparzaVillaverde/Apuntes-2/tree/master/Bases%20nave)
 
-![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/Bases%20nave/camara.PNG)
+![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/Bases%20nave/nave.PNG)
 
 ![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/Bases%20nave/dependencia.PNG)
 
 ![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/Bases%20nave/habita.PNG)
 
-![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/tree/master/Bases%20nave)
+![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/Bases%20nave/camara.PNG)
 
 ![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/Bases%20nave/planeta.PNG)
 
