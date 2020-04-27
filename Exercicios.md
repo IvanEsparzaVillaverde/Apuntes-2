@@ -2,7 +2,7 @@
 
 Para a creación de estas bases de datos, utilicei o coódigo discutido na clase. Para a creación foi utilizada a versión de MariaDB 10.4.
 
-Comando para mostrar as bases de datos **show database**
+-Comando para mostrar as bases de datos **show database**
 
 ![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/databases.PNG)
 
