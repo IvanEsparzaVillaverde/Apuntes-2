@@ -58,24 +58,48 @@ Carpeta coas capturas desta base de datos:
  
  
 ## Base de datos "Naves espaciais"
+
+Carpeta coas capturas desta base de datos:
+
  [Capturas](https://github.com/IvanEsparzaVillaverde/Apuntes-2/tree/master/Bases%20nave)
+ 
+ Creación da base de datos Naves espaciais **CREATE DATABASE** e o comando para usala **USE**
 
 ![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/Bases%20nave/nave.PNG)
 
+ Creación da tabla dependencia **CREATE TABLE**
+
 ![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/Bases%20nave/dependencia.PNG)
+
+ Creación da tabla habita **CREATE TABLE**
 
 ![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/Bases%20nave/habita.PNG)
 
+ Creación da tabla camara **CREATE TABLE**
+
 ![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/Bases%20nave/camara.PNG)
+
+ Creación da tabla planeta **CREATE TABLE**
 
 ![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/Bases%20nave/planeta.PNG)
 
+ Creación da tabla raza **CREATE TABLE**
+
 ![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/Bases%20nave/raza.PNG)
+
+ Creación da tabla servizo **CREATE TABLE**
 
 ![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/Bases%20nave/servizo.PNG)
 
+ Creación da tabla tripulacion **CREATE TABLE**
+
 ![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/Bases%20nave/tripulacion.PNG)
 
+ Creación da tabla visita **CREATE TABLE**
+
 ![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/Bases%20nave/visita.PNG)
+
+
+ Comando para mostrar as tablas da base de datos **show tables**
 
 ![imagen](https://github.com/IvanEsparzaVillaverde/Apuntes-2/blob/master/Bases%20nave/tables.PNG)
